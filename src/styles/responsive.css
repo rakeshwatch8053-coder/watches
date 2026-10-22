@@ -1,0 +1,56 @@
+/* Responsive Grid System for CASIO Product Catalog
+   - Mobile: Exactly 2 watch cards per row
+   - Tablet: 3 watch cards per row
+   - Desktop: Exactly 4 watch cards per row
+ */
+
+.casio-product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .casio-product-grid {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .casio-product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .casio-product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* Ensure images don't distort or overflow */
+.watch-card-media {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #f1f2f5;
+}
+
+/* Touch targets and mobile friendliness */
+@media (max-width: 640px) {
+  .casio-card-title {
+    font-size: 0.8125rem;
+    line-height: 1.2;
+    min-height: 2rem;
+  }
+  .casio-card-model {
+    font-size: 0.6875rem;
+  }
+  .casio-btn-compact {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.6875rem;
+  }
+}

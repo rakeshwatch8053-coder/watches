@@ -1,0 +1,8 @@
+{
+  "name": "CASIO Premium Timepieces Catalog",
+  "description": "Official style luxury showcase and catalog for CASIO, G-SHOCK, EDIFICE, and Vintage timepieces with real-time specification exploration and concierge inquiry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

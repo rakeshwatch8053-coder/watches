@@ -1,0 +1,290 @@
+/* Global Styles for CASIO Timepieces Luxury White Catalog
+
+:root {
+  --casio-bg: #f8f9fa;
+  --casio-card: #ffffff;
+  --casio-card-hover: #ffffff;
+  --casio-gold: #b8860b;
+  --casio-gold-light: #d4af37;
+  --casio-gold-dark: #8c6505;
+  --casio-border: rgba(0, 0, 0, 0.08);
+  --casio-border-gold: rgba(184, 134, 11, 0.4);
+  --casio-text: #111116;
+  --casio-text-muted: #52525b;
+}
+
+/* Universal Arial / sans-serif Typography */
+/* *, *::before, *::after {
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  font-family: Arial, sans-serif !important;
+  background-color: var(--casio-bg);
+  color: var(--casio-text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display, .font-brand, .font-kicker {
+  font-family: Arial, sans-serif !important;
+}
+
+button, input, select, textarea {
+  font-family: Arial, sans-serif !important;
+} */
+
+/* Custom Scrollbar for Light Theme */
+/* ::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f2f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8860b;
+}
+
+/* Gold Gradient Shimmer */
+/* .gold-gradient-text {
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #8c6505 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(184, 134, 11, 0.6);
+  box-shadow: 0 4px 20px rgba(184, 134, 11, 0.15);
+}  */
+
+/* Image zoom on hover */
+/* .watch-img-zoom {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .watch-img-zoom {
+  transform: scale(1.05);
+} */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --casio-bg: #f8f9fa;
+  --casio-card: #ffffff;
+  --casio-card-hover: #ffffff;
+  --casio-gold: #b8860b;
+  --casio-gold-light: #d4af37;
+  --casio-gold-dark: #8c6505;
+  --casio-border: rgba(0, 0, 0, 0.08);
+  --casio-border-gold: rgba(184, 134, 11, 0.4);
+  --casio-text: #111116;
+  --casio-text-muted: #52525b;
+}
+
+/* Universal Typography */
+*, *::before, *::after {
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  font-family: Arial, sans-serif !important;
+  background-color: var(--casio-bg);
+  color: var(--casio-text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display, .font-brand, .font-kicker {
+  font-family: Arial, sans-serif !important;
+}
+
+button, input, select, textarea {
+  font-family: Arial, sans-serif !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f2f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8860b;
+}
+
+/* Gold Shimmer Utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #8c6505 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(184, 134, 11, 0.6);
+  box-shadow: 0 4px 20px rgba(184, 134, 11, 0.15);
+}
+
+/* 🟢 1. Product Card Images Fix (100% Width Full Cover) */
+.watch-img-zoom {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  padding: 0 !important;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .watch-img-zoom {
+  transform: scale(1.05);
+}
+
+/* 🟢 2. Product Details Page: Side-by-Side Grid Layout (Left: Gallery, Right: Details) */
+.product-details-wrapper,
+.product-detail-container,
+.product-detail-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 3rem !important;
+  align-items: start !important;
+  width: 100% !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  padding: 2rem 1rem !important;
+}
+
+/* 🟢 3. Product Details Page Main Image Box (Square & Object-Contain) */
+.product-gallery-main {
+  position: relative;
+  width: 100% !important;
+  aspect-ratio: 1 / 1 !important;
+  background-color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.product-gallery-main img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important; /* Watch bilkul center me aur safe rahegi */
+  object-position: center !important;
+  padding: 1.25rem !important;
+  transition: transform 0.4s ease-in-out;
+}
+
+.product-gallery-main:hover img {
+  transform: scale(1.03);
+}
+
+/* 🟢 4. Thumbnails Line Below Main Image */
+.gallery-thumbnails-container,
+.gallery-thumbnails-grid {
+  display: flex !important;
+  gap: 0.75rem !important;
+  margin-top: 1rem !important;
+  overflow-x: auto;
+  width: 100% !important;
+}
+
+.gallery-thumbnail {
+  width: 72px !important;
+  height: 72px !important;
+  aspect-ratio: 1 / 1 !important;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1.5px solid #e5e7eb;
+  background-color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery-thumbnail img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 0.25rem !important;
+}
+
+.gallery-thumbnail.active {
+  border-color: #b8860b !important;
+  box-shadow: 0 0 10px rgba(184, 134, 11, 0.35) !important;
+}
+
+.gallery-thumbnail:hover:not(.active) {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 🟢 5. Mobile Responsive Stack */
+@media (max-width: 992px) {
+  .product-details-wrapper,
+  .product-detail-container,
+  .product-detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+    padding: 1rem !important;
+  }
+}
+
+/* Modal Animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-animate-enter {
+  animation: modalFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

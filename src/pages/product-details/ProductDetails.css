@@ -1,0 +1,57 @@
+
+
+
+
+
+/* 🟢 Product Details Page Specific Styles - Fixed 100% Width & Side-by-Side Layout */
+/* 🟢 Mobile & Tablet Layout Adjustments (Side-by-Side Split) */
+@media (max-width: 768px) {
+  .product-detail-grid,
+  .product-details-wrapper,
+  .product-detail-container {
+    display: grid !important;
+    /* Mobile par 2 columns: Left for Image, Right for Details */
+    grid-template-columns: 48% 48% !important; 
+    gap: 0.75rem !important;
+    padding: 0.75rem 0.5rem !important;
+  }
+
+  /* Mobile Image Container Size Control */
+  .product-gallery-main {
+    max-height: 260px !important;
+    aspect-ratio: 1 / 1 !important;
+    padding: 0.5rem !important;
+  }
+
+  .product-gallery-main img {
+    padding: 0.5rem !important;
+  }
+
+  /* Mobile Thumbnails */
+  .gallery-thumbnail {
+    width: 45px !important;
+    height: 45px !important;
+  }
+
+  /* Right Side Mobile Text & Buttons */
+  .product-info-section,
+  .product-details-info {
+    gap: 0.5rem !important;
+  }
+
+  .product-info-section h1 {
+    font-size: 0.95rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .product-info-section .price-text {
+    font-size: 1.1rem !important;
+  }
+
+  /* Compact Mobile Buttons */
+  .product-info-section button,
+  .product-info-section a {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+}
