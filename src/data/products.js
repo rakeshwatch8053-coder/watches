@@ -42,10 +42,7 @@ import cosmoimg2 from '../assets/images/Cosmo2.jpg';
 import cosmoimg3 from '../assets/images/Cosmo3.jpg';
 import cosmoimg4 from '../assets/images/Cosmo4.jpg';
 
-// Disel jpg
-//import diselimg1 from '../assets/images/Disel1.jpg';
- // import diselimg2 from '../assets/images/Disel2.jpg';
-// Newly added authentic CASIO models for 10-12 suggestionsimport diselimg3 from '../assets/images/Disel3.jpg';
+// import statement ki zaroorat nahi hai
 
 
 
@@ -86,10 +83,10 @@ import suofanxiimg3 from '../assets/images/Suofanxi3.jpg';
 import suofanxiimg4 from '../assets/images/Suofanxi4.jpg';
 
 // shoping jpg
-import shoppingimg1 from '../assets/images/Shopping1.jpg';  
-import shoppingimg2 from '../assets/images/Shopping2.jpg';  
-import shoppingimg3 from '../assets/images/Shopping3.jpg';  
-import shoppingimg4 from '../assets/images/Shopping4.jpg';
+import shoppingimg1 from '../assets/images/shopping1.jpg';  
+import shoppingimg2 from '../assets/images/shopping2.jpg';  
+import shoppingimg3 from '../assets/images/shopping3.jpg';  
+import shoppingimg4 from '../assets/images/shopping4.jpg';
 
 //sylvia jpg 
 import sylviaimg1 from '../assets/images/sylvi-1.jpg';
